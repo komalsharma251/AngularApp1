@@ -38,8 +38,5 @@ A modern Angular application that demonstrates component-based architecture, inp
 ![Dashboard](public/assets/dashboard5.png)
 ## 🔗 Live Demo
 
-(Will be added after deployment)
+working on it.
 
----
-
-Built as part of Angular component architecture practice.
