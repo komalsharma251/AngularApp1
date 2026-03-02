@@ -1,13 +1,27 @@
+// Main container for user card
 <div class="user-card">
+
+  <!-- Display user profile image -->
+  <!-- [src] binds image path dynamically from user object -->
   <img [src]="user.profilePicture" alt="Profile Image" />
 
+  <!-- Display user name -->
+  <!-- {{ }} is interpolation to show data -->
   <h2>{{ user.name }}</h2>
+
+  <!-- Display user age -->
   <p>Age: {{ user.age }}</p>
 
+  <!-- Status badge (Online / Offline) -->
+  <!-- Dynamic CSS classes based on user.isOnline value -->
   <span 
     class="status-badge" 
     [class.online]="user.isOnline"
     [class.offline]="!user.isOnline">
+
+    <!-- Conditional text display -->
     {{ user.isOnline ? 'Online' : 'Offline' }}
+
   </span>
+
 </div>

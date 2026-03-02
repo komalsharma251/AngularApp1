@@ -1,26 +1,71 @@
+<!-- ===================================================== -->
+<!-- Root Dashboard Container -->
+<!-- This is the main wrapper of the application UI -->
+<!-- [class.dark]="isDarkMode" dynamically adds the 'dark' -->
+<!-- CSS class when isDarkMode = true (Dark Mode Feature) -->
+<!-- ===================================================== -->
+
 <div class="dashboard" [class.dark]="isDarkMode">
 
+  <!-- ================= TOP BAR ================= -->
+  <!-- Displays page title and dark mode toggle button -->
   <div class="top-bar">
+
+    <!-- Main heading of the dashboard -->
     <h1>User Profile</h1>
+
+    <!-- Button to toggle dark mode -->
+    <!-- (click) is an Angular event binding -->
+    <!-- When clicked, toggleDarkMode() function runs -->
     <button class="dark-btn" (click)="toggleDarkMode()">
       Toggle Dark Mode
     </button>
-  </div>
 
+  </div>
+  <!-- =============== END TOP BAR =============== -->
+
+
+  <!-- ================= PROFILE SECTION ================= -->
+  <!-- This wrapper contains all user-related components -->
   <div class="profile-wrapper">
 
+    
+    <!-- 1️USER CARD COMPONENT -->
+    <!-- Displays user basic information (name, email, etc.) -->
+    <!-- [user]="user" is Property Binding -->
+    <!-- It passes the user object from parent to child -->
+    
     <app-user-card [user]="user"></app-user-card>
 
+
+    
+    <!-- 2️ USER STATUS COMPONENT -->
+    <!-- Shows whether user is Online / Offline -->
+    <!-- [isOnline]="user.isOnline" sends data to child -->
+    <!-- (statusChange)="toggleStatus()" listens to -->
+    <!-- event emitted from child component -->
+    
     <app-user-status 
       [isOnline]="user.isOnline"
       (statusChange)="toggleStatus()">
     </app-user-status>
 
+
+    
+    <!-- 3️ USER BIO COMPONENT -->
+    <!-- Displays and edits user's bio/description -->
+    <!-- [bio]="user.bio" sends bio to child -->
+    <!-- (bioChange)="updateBio($event)" -->
+    <!-- receives updated bio from child -->
+    <!-- $event contains the new bio value -->
+    
     <app-user-bio
       [bio]="user.bio"
       (bioChange)="updateBio($event)">
     </app-user-bio>
 
   </div>
+  <!-- =============== END PROFILE SECTION =============== -->
 
 </div>
+<!-- ================= END DASHBOARD ================= -->

@@ -1,49 +1,59 @@
+/* Remove default browser margin */
 body {
   margin: 0;
 }
 
+/* ================= Dashboard Container ================= */
+/* Main wrapper of the app */
 .dashboard {
-  min-height: 100vh;
-  padding: 40px;
-  font-family: 'Inter', sans-serif;
-  background-color: #f6f8fb;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  min-height: 100vh; /* Full screen height */
+  padding: 40px; /* Space inside container */
+  font-family: 'Inter', sans-serif; /* Modern font */
+  background-color: #f6f8fb; /* Light background */
+  display: flex; /* Flex layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center horizontally */
 }
 
+/* Dark mode styles (applied dynamically) */
 .dashboard.dark {
-  background-color: #0f172a;
-  color: #e2e8f0;
+  background-color: #0f172a; /* Dark background */
+  color: #e2e8f0; /* Light text */
 }
 
+/* ================= Top Bar ================= */
+/* Header section containing title + button */
 .top-bar {
   width: 100%;
-  max-width: 800px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 30px;
+  max-width: 800px; /* Prevents stretching too wide */
+  display: flex; /* Horizontal layout */
+  justify-content: space-between; /* Space between title & button */
+  align-items: center; /* Vertical alignment */
+  margin-bottom: 30px; /* Space below header */
 }
 
+/* ================= Dark Mode Button ================= */
 .dark-btn {
-  padding: 8px 16px;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  background: #2563eb;
-  color: white;
+  padding: 8px 16px; /* Inner spacing */
+  border-radius: 8px; /* Rounded corners */
+  border: none; /* Remove default border */
+  cursor: pointer; /* Pointer cursor on hover */
+  background: #2563eb; /* Blue background */
+  color: white; /* White text */
   font-weight: 500;
-  transition: 0.2s ease;
+  transition: 0.2s ease; /* Smooth hover animation */
 }
 
+/* Button hover effect */
 .dark-btn:hover {
-  background: #1d4ed8;
+  background: #1d4ed8; /* Darker blue on hover */
 }
 
+/* ================= Profile Section ================= */
+/* Wrapper for all user components */
 .profile-wrapper {
   width: 100%;
-  max-width: 800px;
-  display: grid;
-  gap: 25px;
+  max-width: 800px; /* Keeps layout centered */
+  display: grid; /* Grid layout for spacing */
+  gap: 25px; /* Space between components */
 }
