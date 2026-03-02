@@ -31,7 +31,7 @@ A modern Angular application that demonstrates component-based architecture, inp
 
 ## 📸 Preview
 
-![Dashboard Screenshot](assets/Screen Recording 2026-03-02 at 12.18.37 PM)
+![User Dashboard](assets/dashboard1.png)
 
 ## 🔗 Live Demo
 
