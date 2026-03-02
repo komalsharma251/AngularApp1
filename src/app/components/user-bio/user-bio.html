@@ -1,0 +1,35 @@
+<div class="bio-card">
+
+  <div class="bio-header">
+    <h3>About Me</h3>
+
+    <button *ngIf="!isEditing" (click)="startEdit()">
+      Edit
+    </button>
+  </div>
+
+  <!-- VIEW MODE -->
+  <div *ngIf="!isEditing" class="bio-text">
+    {{ bio }}
+  </div>
+
+  <!-- EDIT MODE -->
+  <div *ngIf="isEditing">
+
+    <textarea 
+      [(ngModel)]="editedBio"
+      maxlength="200">
+    </textarea>
+
+    <div class="bio-footer">
+      <span>{{ editedBio.length }}/200</span>
+
+      <div>
+        <button class="cancel-btn" (click)="cancel()">Cancel</button>
+        <button class="save-btn" (click)="save()">Save</button>
+      </div>
+    </div>
+
+  </div>
+
+</div>

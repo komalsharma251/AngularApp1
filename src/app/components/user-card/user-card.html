@@ -1,0 +1,13 @@
+<div class="user-card">
+  <img [src]="user.profilePicture" alt="Profile Image" />
+
+  <h2>{{ user.name }}</h2>
+  <p>Age: {{ user.age }}</p>
+
+  <span 
+    class="status-badge" 
+    [class.online]="user.isOnline"
+    [class.offline]="!user.isOnline">
+    {{ user.isOnline ? 'Online' : 'Offline' }}
+  </span>
+</div>

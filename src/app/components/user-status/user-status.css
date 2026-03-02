@@ -1,0 +1,39 @@
+.status-container {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 15px;
+  border-radius: 30px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.online {
+  background: #d4edda;
+  color: #155724;
+}
+
+.offline {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.status-container button {
+  padding: 6px 15px;
+  border-radius: 20px;
+  border: none;
+  background: #667eea;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.status-container button:hover {
+  background: #5a67d8;
+}

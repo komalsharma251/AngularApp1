@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+/* ===== Professional Portfolio Theme ===== */
+
+body {
+  margin: 0;
+  background-color: #f6f8fb;
+  color: #1f2937;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+/* Smooth text rendering */
+* {
+  box-sizing: border-box;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #2563eb;
+}
+
+a:hover {
+  color: #1d4ed8;
+}/* You can add global styles to this file, and also import other style files */
