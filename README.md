@@ -29,6 +29,7 @@ A modern Angular application that demonstrates component-based architecture, inp
 - Angular CLI project structure
 - Version control using Git
 
+
 ## 📸 Preview
 
 ![Dashboard](public/assets/dashboard1.png)
